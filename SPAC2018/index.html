@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>SPAC-2018 Coming Soon...</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/icon" href="images/favicon.ico"/>
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap -->
@@ -53,22 +53,36 @@
 			      </button>
 
 			      <!-- Logo -->
-			      <!-- <a class="navbar-brand" href="index.html"><img src="images/ieee.jpg" id = "logo-img"></img></a> -->
+			      <a class="nav navbar-nav mu-menu navbar-left" href="index.html"><img src="images/SPAC2018Logo.png" id = "logo-img"></img></a>
 
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      	<ul class="nav navbar-nav mu-menu navbar-right">
-						<li style="float:left"><a class="active" href="index.html"><img src="images/ieee.jpg" id = "logo-img"></img></a></li>
-			      		<li><a href="#mu-hero">Home</a></li>
-				        <li><a href="#mu-about">About Us</a></li>
-				        <li><a href="#mu-schedule">Schedule</a></li>
-			            <li><a href="#mu-speakers">Speakers</a></li>
-			            <li><a href="#mu-pricing">Tickets</a></li>
+			      		<li class = "font-color"><a href="#mu-hero">Home</a></li>
+				        <li class = "font-color"><a href="#mu-about">About Us</a></li>
+				        <li class = "font-color"><a href="#mu-schedule">Agenda</a></li>
+			            <li class = "font-color"><a href="#mu-speakers">Speakers</a></li>
+			            <li class = "font-color"><a href="#mu-pricing">Tickets</a></li>
 			            <!-- <li><a href="#mu-register">Tickets</a></li> -->
-			            <li><a href="#mu-sponsors">Sponsors</a></li>
-			            <li><a href="#mu-contact">Contact</a></li>
+			            <li class = "dropdown">
+			            	<a class="dropdown-toggle font-color" data-toggle="dropdown" role="button" aria-expanded="false" data-target="#">
+			            		Patrons
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                            	<li>
+                                	<a href="#mu-sponsors">Our Patrons</a>
+                             	</li>
+                             	<li>
+                                	<a class="link-clickable" data-toggle="modal" data-target="#patronageModal">Patronage Options</a>
+                             	</li>
+                             	<li>
+                                	<a target="_blank" href="documents\IEEE_SPAC_2017_Patronage_Package.pdf">Download Patronage package</a>
+                             	</li>
+                            </ul>	
+			            </li>
+			            <li class = "font-color"><a href="#mu-contact">Contact</a></li>
 			      	</ul>
 			    </div><!-- /.navbar-collapse -->
 		  	</div><!-- /.container-fluid -->
@@ -182,6 +196,31 @@
 		</section>
 		<!-- End Video -->
 
+		<!-- Start Venue -->
+		<section id="mu-venue">
+			<div class="mu-venue-area">
+				<div class="row">
+
+					<div class="col-md-6">
+						<div class="mu-venue-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11211.506799965064!2d-75.7052073!3d45.3714831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa30076f96c916d7c!2sHellenic+Meeting+%26+Reception+Centre!5e0!3m2!1sen!2sca!4v1508379159387" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="mu-venue-address">
+							<h2>VENUE <i class="fa fa-chevron-right" aria-hidden="true"></i></h2>
+							<h3>Hellenic Meeting & Reception Center </h3>
+							<h4>1315 Prince of Wales Dr, Ottawa, ON K2C 1N2</h4>
+							<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem reiciendis incidunt accusantium porro amet repellendus hic corporis fugiat officiis, sequi iste distinctio possimus dignissimos, veniam quae delectus. Fuga, modi, perferendis!</p> -->
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- End Venue -->		
+
 		<!-- Start Schedule  -->
 		<section id="mu-schedule">
 			<div class="container">
@@ -190,62 +229,79 @@
 						<div class="mu-schedule-area">
 
 							<div class="mu-title-area">
-								<h2 class="mu-title">Schedule Detail</h2>
-								<p>TBD</p>
+								<h2 class="mu-title">Agenda</h2>
 							</div>
 
 							<div class="mu-schedule-content-area">
 								<!-- Nav tabs -->
-								<ul class="nav nav-tabs mu-schedule-menu" role="tablist">
-								    <li role="presentation" class="active"><a href="#first-day" aria-controls="first-day" role="tab" data-toggle="tab">1 Day / 19 Feb</a></li>
-								    <li role="presentation"><a href="#second-day" aria-controls="second-day" role="tab" data-toggle="tab">2 Day / 20 Feb</a></li>
-								    <li role="presentation"><a href="#third-day" aria-controls="third-day" role="tab" data-toggle="tab">3 Day / 21 Feb</a></li>
-								    
+								<ul class="nav nav-tabs mu-schedule-menu">
+								    <li role="presentation" class="active"><a href="#first-day" aria-controls="first-day" role="tab" data-toggle="tab">Date: TBD</a></li>	    
 								</ul>
 
 								<!-- Tab panes -->
-								<div class="tab-content mu-schedule-content">
+								<!--<div class="tab-content mu-schedule-content"> -->
 								    <div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="first-day">
 								    	<ul>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<p class="mu-event-time">9.00 AM</p>
-								    				<h3>Breakfast</h3>
+								    				<img src="images/header/header3.jpg" alt="registration">
+								    				<p class="mu-event-time">5:30 - 6:30PM</p>
+								    				<h3>Registration</h3>
+								    				<br>
 								    			</div>
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/speaker-1.jpg" alt="event speaker">
-								    				<p class="mu-event-time">10.00 AM</p>
-								    				<h3>Advanced SVG Animations</h3>
-								    				<span>By Karl Groves</span>
+								    				<img src="images/welcome.jpg" alt="welcoming">
+								    				<p class="mu-event-time">6:35 - 6:45PM</p>
+								    				<h3>Welcoming Remarks</h3>
+								    				<br>
 								    			</div>
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/speaker-2.jpg" alt="event speaker">
-								    				<p class="mu-event-time">11.00 AM</p>
-								    				<h3>Presenting Work with Confidence</h3>
-								    				<span>By Sarah Dransner</span>
+								    				<img src="images/speakers/unknown.png" alt="event speaker #1">
+								    				<p class="mu-event-time">6:45 - 7:10PM</p>
+								    				<h3>Speaker #1: TBD</h3>
+								    				<br>
 								    			</div>
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="assets/images/speaker-3.jpg" alt="event speaker">
-								    				<p class="mu-event-time">12.00 AM</p>
-								    				<h3>Keynote on UX & UI Design</h3>
-								    				<span>By Ned Stark</span>
+								    				<img src="images/dinner.jpg" alt="dinner">
+								    				<p class="mu-event-time">7:10 - 7:55PM</p>
+								    				<h3>Dinner</h3>
+								    				<br>
 								    			</div>
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<p class="mu-event-time">1.00 PM</p>
-								    				<h3>The End</h3>
+													<img src="images/speakers/unknown.png" alt="event speaker #2">								    				
+								    				<p class="mu-event-time">8:00 - 8:25PM</p>
+								    				<h3>Speaker #2: TBD</h3>
+								    				<br>
 								    			</div>
 								    		</li>
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<img src="images/header/header.jpg" alt="closing">	
+								    				<p class="mu-event-time">8:25 - 8:40PM</p>
+								    				<h3>Closing Remarks & Prizes</h3>
+								    				<br>
+								    			</div>
+								    		</li>	
+								    		<li>
+								    			<div class="mu-single-event">
+								    				<img src="images/ext.jpg" alt="networking">	
+								    				<p class="mu-event-time">8:40 - 10:00PM</p>
+								    				<h3>Networking</h3>
+								    				<br>
+								    			</div>
+								    		</li>								    									    		
 								    	</ul>
 								    </div>
-								    <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="second-day">
+
+<!-- 								    <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="second-day">
 								    	<ul>
 								    		<li>
 								    			<div class="mu-single-event">
@@ -326,7 +382,7 @@
 								    	</ul>
 								    </div>
 								    
-								</div>
+								</div> -->
 
 							</div>
 							
@@ -345,36 +401,21 @@
 						<div class="mu-speakers-area">
 
 							<div class="mu-title-area">
-								<h2 class="mu-title">Our Speakers</h2>
-								<p>TBD.</p>
+								<h2 class="mu-title">Speakers</h2>
+								<p>Coming Soon...</p>
 							</div>
 
 							<!-- Start Speakers Content -->
 							<div class="mu-speakers-content">
 
-								<div class="mu-speakers-slider">
+								<div align="center">
 
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/speaker-1.jpg" alt="speaker img">
+										<img src="images/speakers/unknown.png" alt="Speaker #1">
 										<div class="mu-single-speakers-info">
-											<h3>Karl Groves</h3>
-											<p>Digital Artist</p>
-											<ul class="mu-single-speakers-social">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											</ul>
-										</div>
-									</div>
-									<!-- End single speaker -->
-
-									<!-- Start single speaker -->
-									<div class="mu-single-speakers">
-										<img src="assets/images/speaker-2.jpg" alt="speaker img">
-										<div class="mu-single-speakers-info">
-											<h3>Sarah Dransner</h3>
-											<p>Business Consultant</p>
+											<h3>Speaker #1</h3>
+											<p>TBD</p>
 											<ul class="mu-single-speakers-social">
 												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -387,10 +428,10 @@
 
 									<!-- Start single speaker -->
 									<div class="mu-single-speakers">
-										<img src="assets/images/speaker-3.jpg" alt="speaker img">
+										<img src="images/speakers/unknown.png" alt="Speaker #2">
 										<div class="mu-single-speakers-info">
-											<h3>Ned Stark</h3>
-											<p>UI/UX Specialist</p>
+											<h3>Speaker #2</h3>
+											<p>TBD</p>
 											<ul class="mu-single-speakers-social">
 												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -400,83 +441,6 @@
 									</div>
 									<!-- End single speaker -->
 
-
-									<!-- Start single speaker -->
-									<div class="mu-single-speakers">
-										<img src="assets/images/speaker-4.jpg" alt="speaker img">
-										<div class="mu-single-speakers-info">
-											<h3>Michaela Lehr </h3>
-											<p>Digital Marketer</p>
-											<ul class="mu-single-speakers-social">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											</ul>
-										</div>
-									</div>
-									<!-- End single speaker -->
-
-									<!-- Start single speaker -->
-									<div class="mu-single-speakers">
-										<img src="assets/images/speaker-1.jpg" alt="speaker img">
-										<div class="mu-single-speakers-info">
-											<h3>Karl Groves</h3>
-											<p>Digital Artist</p>
-											<ul class="mu-single-speakers-social">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											</ul>
-										</div>
-									</div>
-									<!-- End single speaker -->
-
-									<!-- Start single speaker -->
-									<div class="mu-single-speakers">
-										<img src="assets/images/speaker-2.jpg" alt="speaker img">
-										<div class="mu-single-speakers-info">
-											<h3>Sarah Dransner</h3>
-											<p>Business Consultant</p>
-											<ul class="mu-single-speakers-social">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											</ul>
-										</div>
-									</div>
-									<!-- End single speaker -->
-
-
-									<!-- Start single speaker -->
-									<div class="mu-single-speakers">
-										<img src="assets/images/speaker-3.jpg" alt="speaker img">
-										<div class="mu-single-speakers-info">
-											<h3>Ned Stark</h3>
-											<p>UI/UX Specialist</p>
-											<ul class="mu-single-speakers-social">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											</ul>
-										</div>
-									</div>
-									<!-- End single speaker -->
-
-
-									<!-- Start single speaker -->
-									<div class="mu-single-speakers">
-										<img src="assets/images/speaker-4.jpg" alt="speaker img">
-										<div class="mu-single-speakers-info">
-											<h3>Michaela Lehr </h3>
-											<p>Digital Marketer</p>
-											<ul class="mu-single-speakers-social">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											</ul>
-										</div>
-									</div>
-									<!-- End single speaker -->
 								</div>
 							</div>
 							<!-- End Speakers Content -->
@@ -487,31 +451,6 @@
 			</div>
 		</section>
 		<!-- End Speakers -->
-
-		<!-- Start Venue -->
-		<section id="mu-venue">
-			<div class="mu-venue-area">
-				<div class="row">
-
-					<div class="col-md-6">
-						<div class="mu-venue-map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11211.506799965064!2d-75.7052073!3d45.3714831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa30076f96c916d7c!2sHellenic+Meeting+%26+Reception+Centre!5e0!3m2!1sen!2sca!4v1508379159387" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-						</div>
-					</div>
-
-					<div class="col-md-6">
-						<div class="mu-venue-address">
-							<h2>VENUE <i class="fa fa-chevron-right" aria-hidden="true"></i></h2>
-							<h3>Hellenic Meeting & Reception Center </h3>
-							<h4>1315 Prince of Wales Dr, Ottawa, ON K2C 1N2</h4>
-							<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem reiciendis incidunt accusantium porro amet repellendus hic corporis fugiat officiis, sequi iste distinctio possimus dignissimos, veniam quae delectus. Fuga, modi, perferendis!</p> -->
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-		<!-- End Venue -->
 
 		<!-- Start Pricing  -->
 		<section id="mu-pricing">
@@ -524,12 +463,18 @@
 								<h2 class="mu-title">Ticketing</h2>
 								<h3> You can purchase your tickets online or visit your local IEEE student branch</h3>
 								<p>(SITE 4026 uOttawa / T206B Algonquin College / ME4238 Carleton University)</p>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<h1> Coming Soon ...</h1>
 							</div>
 							
-							<div class="mu-pricing-conten">
+<!-- 							<div class="mu-pricing-conten">
 								<div class="row">
 									
-									<!-- single price item -->
+									<!-- single price item 
 									<div class="col-md-4">
 										<div class="mu-single-price">
 
@@ -547,9 +492,9 @@
 											<a class="mu-register-btn" href="#"> Register Now</a>
 										</div>
 									</div>
-									<!-- / single price item -->
+									<!-- / single price item 
 
-									<!-- single price item -->
+									<!-- single price item 
 									<div class="col-md-4">
 										<div class="mu-single-price mu-popular-price">
 											<span class="mu-price-tag">Popular</span>
@@ -567,9 +512,9 @@
 											<a class="mu-register-btn" href="#"> Register Now</a>
 										</div>
 									</div>
-									<!-- / single price item -->
+									<!-- / single price item 
 
-									<!-- single price item -->
+									<!-- single price item 
 									<div class="col-md-4">
 										<div class="mu-single-price">
 
@@ -587,9 +532,9 @@
 											<a class="mu-register-btn" href="#"> Register Now</a>
 										</div>
 									</div>
-									<!-- / single price item -->
+									<!-- / single price item 
 
-								</div>
+								</div> -->
 							</div>
 
 						</div>
@@ -869,7 +814,7 @@
 
 							<div class="mu-title-area">
 								<h2 class="mu-heading-title">Contact Us</h2>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+								<p>Please use this form to contact us if you have any questions. We will try to get back to you within 24 hours.</p>
 							</div>
 
 							<!-- Start Contact Content -->
@@ -913,16 +858,24 @@
 			<div class="container">
 				<div class="mu-footer-area">
 					<div class="mu-footer-top">
-						<div class="mu-social-media">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-google-plus"></i></a>
-							<a href="#"><i class="fa fa-linkedin"></i></a>
-							<a href="#"><i class="fa fa-youtube"></i></a>
-						</div>
+                    <br>
+                    <br>
+                    <h4 class="font-color" >SPAC 2017 is organized by</h4>
+                    <hr></hr>
+                    <div class="col-lg-4">
+                        <a href="http://ieeecarleton.ca/" target="_blank"><img class="block-center contact_icons footer-img" src="images/logos/IEEE_Carleton.png" alt="IEEE Carleton"></img></a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="http://www.ieeeuottawa.ca/" target="_blank"><img class="block-center contact_icons footer-img" src="images/logos/IEEE_uOttawa.png" alt="IEEE UOttawa"></img></a>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="http://ewh.ieee.org/sb/ottawa/algonquin/" target="_blank"><img class="block-center contact_icons footer-img" src="images/logos/IEEE_Algonquin.png" alt="IEEE Algonquin"></img></a>
+                    </div>
+                    <hr></hr>
 					</div>
 					<div class="mu-footer-bottom">
-						<p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="http://markups.io">markups.io</a>. All right reserved.</p>
+						<br>
+						<p class = "font-color">Managed by <a href="http://irushavm.github.io" class = "font-color">Irusha Vidanamadura</a></p>
 					</div>
 				</div>
 			</div>

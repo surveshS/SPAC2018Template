@@ -45,12 +45,13 @@ body {
 }
 
 ul {
+	list-style:none;
 	padding: 0;
 	margin: 0;
 }
 
 ul li {
-	list-style: disc;
+	list-style: none;
 	font-size: 17px;
 	line-height: 1.59;
 }
@@ -172,7 +173,9 @@ button:focus {
 	border: none;
 }
 
-
+.font-color {
+	color: #5DBCD2;
+}
 /* ========= BUTTON =========*/
 
 .mu-primary-btn {
@@ -221,7 +224,7 @@ button:focus {
 /*--------------------*/
 
 #mu-hero {
-	background-image: url("assets/images/head-featured-bg.jpg");
+	background-image: url("images/header/2017-main-header.jpg");
 	display: inline;
 	float: left;
 	width: 100%;
@@ -357,15 +360,11 @@ button:focus {
 /*--------------------*/
 
 #mu-hero .navbar-default {
-	background-color: #fff;
-	border-color: #e7e7e7;
+	background-color: #262626;
+	border-color: #262626;
 	padding: 5px 0;
 }
 
-.mu-navbar {
-	top: -150px;
-	transition: all 0.5s;
-}
 
 .mu-nav-show {
 	top: 0px;
@@ -378,10 +377,10 @@ button:focus {
 }
 
 .mu-navbar .mu-menu li a {
-	color: #333;
+	color: #5DBCD2;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
-	transition: all 0.5s;
+	transition: all 0.5s;      
 }
 
 .navbar-default .navbar-nav > .active > a, 
@@ -390,6 +389,15 @@ button:focus {
 	color: #fff;
 }
 
+..dropdown-menu{
+    color: #fff;
+    background-color: #313131;
+    margin-right: -1px;
+}
+
+.dropdown-toggle{
+    margin-bottom: -1px;
+}
 
 
 /*--------------------*/
@@ -448,7 +456,7 @@ button:focus {
 
 
 #mu-video {
-	background-image: url("assets/images/about-video-bg.jpg");
+	background-image: url("images/header/2017-main-header.jpg");
 	background-attachment: fixed;
 	background-position: center center;
 	-webkit-background-size: cover;
@@ -1285,7 +1293,7 @@ button:focus {
 
 
 #mu-footer {
-	background-color: #f8f8f8;
+	background-color: #262626;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -1328,6 +1336,9 @@ button:focus {
 	font-size: 15px;
 }
 
+.footer-img{
+	background-color: "#5DBCD2";
+}
 .mu-footer-bottom {
 	display: inline;
 	float: left;
@@ -1343,6 +1354,13 @@ button:focus {
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
+}
+
+.col-lg-4{
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;	
 }
 
 
