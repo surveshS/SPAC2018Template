@@ -1787,3 +1787,8 @@ button:focus {
 	
 }
 
+div.navbar-header a.nav.navbar-nav.mu-menu.navbar-left {
+	float: left;
+	width: 20%;
+	min-width: 130px;
+}
