@@ -433,11 +433,11 @@ button:focus {
 	text-transform: capitalize;
 }
 
-.mu-about-left {
+/*.mu-about-left {
 	display: inline;
 	float: left;
 	width: 100%;
-}
+}*/
 
 .mu-about-right {
 	display: inline;
