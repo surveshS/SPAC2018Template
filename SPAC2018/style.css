@@ -312,8 +312,6 @@ button:focus {
 }
 
 .mu-event-date-line {
-	background-color: #fff;
-	color: #333;
 	padding: 5px 10px;
 	display: inline-block;
 	margin-top: 10px;
