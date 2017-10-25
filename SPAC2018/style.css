@@ -1490,6 +1490,13 @@ div.patron-intrest {
   padding-right: 15px;	
 }
 
+.contact_icons{
+    height: 85px;
+    display: block;
+    margin: 0 auto;
+    padding:  10px 10px 20px 10px;
+}
+
 
 
 /*--------------------*/
