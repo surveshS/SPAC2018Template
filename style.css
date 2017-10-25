@@ -295,6 +295,10 @@ button:focus {
 	margin-top: 50px;
 	text-align: center;
 	width: 100%;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.4);
+    padding-bottom: 77px;
+    padding-top: 24px;
 }
 
 .mu-hero-featured-content h1 {
@@ -333,14 +337,14 @@ button:focus {
 }
 
 .mu-event-counter-block {
-	border: 2px solid #fff;
+	border: 2px solid #37c6f5;
 	border-radius: 50%;
 	display: inline-block;
 	height: 180px;
 	width: 180px;
 	text-align: center;
 	font-size: 22px;
-	color: #fff;
+	color: #37c6f5;
 	margin: 0 20px;
 	font-weight: 300;
 }
@@ -433,23 +437,24 @@ button:focus {
 	text-transform: capitalize;
 }
 
-/*.mu-about-left {
+.mu-about-left {
 	display: inline;
 	float: left;
 	width: 100%;
-}*/
+}
 
 .mu-about-right {
 	display: inline;
-	float: left;
-	margin-top: 30px;
+	float: right;
 	width: 100%;
 }
 
 #slideshow { 
-	display: inline;
-	float: left;
-	width: 100%;
+    margin: 50px auto; 
+    position: relative; 
+    width: 500px; 
+    height: 340px; 
+    padding: 10px; 
     box-shadow: 0 0 20px rgba(0,0,0,0.4); 
 }
 
@@ -734,7 +739,6 @@ button:focus {
 /*--------------------*/
 /* SPEAKERS */
 /*--------------------*/
-
 
 #mu-speakers {
 	background-color: #fff;
