@@ -218,7 +218,6 @@ button:focus {
 }
 
 
-
 /*--------------------*/
 /* HEADER */
 /*--------------------*/
@@ -455,7 +454,6 @@ button:focus {
     width: 500px; 
     height: 340px; 
     padding: 10px; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
 }
 
 #slideshow > div { 
@@ -870,7 +868,7 @@ button:focus {
 
 
 #mu-pricing {
-	background-color: #fff;
+	background-color: #f8f8f8;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -1296,7 +1294,7 @@ div.patron-intrest {
 /*--------------------*/
 
 #mu-contact {
-	background-color: #fff;
+	background-color: #f8f8f8;
 	display: inline;
 	float: left;
 	width: 100%;
